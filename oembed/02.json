@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "provider_name": "Franklin Institute",
+  "provider_url": "https://anwar-franklin.github.io/tim-folien-embed/",
+  "title": "Ein Frame, eine HTML-Seite",
+  "author_name": "Franklin Institute",
+  "width": 1280,
+  "height": 720,
+  "html": "<iframe src=\"https://anwar-franklin.github.io/tim-folien-embed/02.html\" width=\"1280\" height=\"720\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" style=\"border:0\"></iframe>"
+}

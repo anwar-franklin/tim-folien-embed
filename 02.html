@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ein Frame, eine HTML-Seite</title>
+<link rel="stylesheet" href="deck.css">
+<link rel="alternate" type="application/json+oembed" href="https://anwar-franklin.github.io/tim-folien-embed/oembed/02.json">
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="assets/franklin-logo-2026.svg" alt="Franklin Institute">
+  <div class="safe">
+    <p class="kicker">Aufbau des Versuchs</p>
+    <h1 class="h1">Ein Frame, eine <span class="accent">HTML-Seite</span></h1>
+    <p class="lead">Miro lädt jede Folie als eigene Seite in den Frame und hält sie bedienbar.</p>
+  </div>
+  <div class="stage">
+    <div class="mitte">
+      <div class="kette">
+        <div class="glied">
+          <p class="nr">Schritt 1</p>
+          <h2>Folie als Code</h2>
+          <p>Die Folie entsteht als HTML im Franklin-Design, Format 16:9.</p>
+        </div>
+        <div class="pfeil">
+          <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12H30 M30 12L21 5 M30 12L21 19" stroke="#d3d9df" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="glied">
+          <p class="nr">Schritt 2</p>
+          <h2>Adresse im Netz</h2>
+          <p>Ein Deployment gibt jeder Folie eine feste, aufrufbare Adresse.</p>
+        </div>
+        <div class="pfeil">
+          <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12H30 M30 12L21 5 M30 12L21 19" stroke="#d3d9df" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="glied glied--aktiv">
+          <p class="nr">Schritt 3</p>
+          <h2>Embed im Frame</h2>
+          <p>Der Frame trägt die Seite. Klicks und Eingaben bleiben erhalten.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bodennote">
+      <span class="case"><b>Folge:</b> Die Präsentationsansicht springt von Frame zu Frame — der Inhalt bleibt eine laufende Seite, kein Bild.</span>
+    </div>
+  </div>
+  <p class="src">Versuchsaufbau vom 3. September 2026 · Playground-Board</p>
+</div>
+<script src="fit.js"></script>
+</body>
+</html>
