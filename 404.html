@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <style>
 html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#fff}
-iframe{display:block;border:0;width:100vw;height:100vh}
+html.dunkel,html.dunkel body{background:#252629}
+iframe{display:block;border:0;width:100vw;height:100vh;background:transparent}
 </style>
 </head>
 <body>
@@ -12,9 +13,13 @@ iframe{display:block;border:0;width:100vw;height:100vh}
 <script>
 /* GitHub Pages liefert diese Seite mit HTTP 404 aus. Ein Browser zeigt die
    Folie, Miros Auflöser bekommt einen Fehlerstatus und rahmt die Adresse
-   deshalb roh ein, statt eine Link-Karte zu bauen. */
+   deshalb roh ein, statt eine tote Link-Karte zu bauen.
+   Miro erzwingt bei rohen iframes 1:1. Der Grund der Seite trägt deshalb die
+   Farbe der Folie, damit ober- und unterhalb kein fremder Rand steht. */
 var t = location.pathname.match(/(\d{2})\/?$/);
-document.getElementById('folie').src = '/tim-folien-embed/' + (t ? t[1] : '01') + '.html';
+var n = t ? t[1] : '01';
+if (n === '01') document.documentElement.className = 'dunkel';
+document.getElementById('folie').src = '/tim-folien-embed/' + n + '.html';
 </script>
 </body>
 </html>
