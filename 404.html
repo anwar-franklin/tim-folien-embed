@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#fff}
+iframe{display:block;border:0;width:100vw;height:100vh}
+</style>
+</head>
+<body>
+<iframe id="folie" title="Folie" allowfullscreen></iframe>
+<script>
+/* GitHub Pages liefert diese Seite mit HTTP 404 aus. Ein Browser zeigt die
+   Folie, Miros Auflöser bekommt einen Fehlerstatus und rahmt die Adresse
+   deshalb roh ein, statt eine Link-Karte zu bauen. */
+var t = location.pathname.match(/(\d{2})\/?$/);
+document.getElementById('folie').src = '/tim-folien-embed/' + (t ? t[1] : '01') + '.html';
+</script>
+</body>
+</html>
